@@ -91,7 +91,7 @@ module "k8s_cluster" {
 module "k8s_ng" {
   for_each = var.nodegroups
 
-  source     = "git::https://github.com/agmtr/terraform-yandex-k8s-nodegroup.git?ref=v1.0.0"
+  source     = "git::https://github.com/agmtr/terraform-yandex-k8s-ng.git?ref=v1.0.0"
   cluster_id = module.k8s_cluster.id
   network = {
     subnets = each.value.subnets
