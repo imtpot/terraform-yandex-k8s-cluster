@@ -61,7 +61,7 @@ module "k8s_ng_nodeports_sg" {
 }
 
 module "k8s_cluster" {
-  source    = "git::https://github.com/agmtr/terraform-yandex-k8s-master.git?ref=v1.0.0"
+  source    = "git::https://github.com/agmtr/terraform-yandex-k8s-master.git?ref=v1.0.1"
   folder_id = var.folder_id
   name = var.name
   network = {

@@ -19,7 +19,8 @@ variable "network" {
 variable "location" {
   type = object({
     region = optional(string)
-    zone   = optional(string)
+    zones   = optional(list(string))
+    zone    = optional(string)
   })
   default = {
     zone = "ru-central1-a"
