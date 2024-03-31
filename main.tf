@@ -116,5 +116,6 @@ module "k8s_ng" {
   }
   config = {
     version = var.config.ng_version != null ? var.config.ng_version : var.config.version
+    container_runtime = var.config.container_runtime
   }
 }

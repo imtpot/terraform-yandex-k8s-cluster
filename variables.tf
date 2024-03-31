@@ -32,6 +32,7 @@ variable "config" {
     ng_version      = optional(string)
     release_channel = optional(string)
     kms_key_id      = optional(string)
+    container_runtime = optional(string)
   })
   default = {}
 }
